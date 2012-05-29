@@ -1,4 +1,6 @@
-# Mathias’s dotfiles
+# Daniel's dotfiles
+
+This is just a personal fork of [Matthias' dotfiles](https://github.com/mathiasbynens/dotfiles/). It's more Apple-default-oriented in its treatment of the `.osx` config.
 
 ## Installation
 
@@ -24,7 +26,7 @@ Alternatively, to update while avoiding the confirmation prompt:
 
 ### Git-free install
 
-To install these dotfiles without Git:
+Use Matthias' repo; don't bother with mine:
 
 ```bash
 cd; curl -#L https://github.com/mathiasbynens/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
@@ -60,18 +62,11 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ./.osx
 ```
 
-## Feedback
-
-Suggestions/improvements
-[welcome](https://github.com/mathiasbynens/dotfiles/issues)!
-
 ## Thanks to…
 
 * [Gianni Chiappetta](http://gf3.ca/) for sharing his [amazing collection of dotfiles](https://github.com/gf3/dotfiles)
 * [Matijs Brinkhuis](http://hotfusion.nl/) and his [homedir repository](https://github.com/matijs/homedir)
 * [Jan Moesen](http://jan.moesen.nu/) and his [ancient `.bash_profile`](https://gist.github.com/1156154) + [shiny tilde repository](https://github.com/janmoesen/tilde)
 * [Ben Alman](http://benalman.com/) and his [dotfiles repository](https://github.com/cowboy/dotfiles)
-* [Nicolas Gallagher](http://nicolasgallagher.com/) and his [dotfiles repository](https://github.com/necolas/dotfiles)
-* [Tom Ryder](http://blog.sanctum.geek.nz/) and his [dotfiles repository](https://github.com/tejr/dotfiles)
 * [Tim Esselens](http://devel.datif.be/)
 * anyone who [contributed a patch](https://github.com/mathiasbynens/dotfiles/contributors) or [made a helpful suggestion](https://github.com/mathiasbynens/dotfiles/issues)

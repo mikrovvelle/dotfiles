@@ -10,9 +10,30 @@ shopt -s nocaseglob
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend
+export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/q/m32
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
+export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
+export LD_LIBRARY_PATH=/usr/local/Cellar/cairo/1.10.2/lib
+
+export JULIAPATH=$HOME/src/julia
+export PATH=$PATH:$JULIAPATH
+
+alias q="rlwrap q"
+alias N='cd ~/src/Nagler'
+alias P='cd ~/src/Nagler/PuMa'
+alias f='find . -iname'
+alias gf='find . ! -ipath "*.git*"'
+
+alias pc='proxychains'
+export PS1='\u@\h:\w$ '
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
 
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"
