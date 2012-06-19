@@ -23,8 +23,6 @@ export JULIAPATH=$HOME/src/julia
 export PATH=$PATH:$JULIAPATH
 
 alias q="rlwrap q"
-alias N='cd ~/src/Nagler'
-alias P='cd ~/src/Nagler/PuMa'
 alias f='find . -iname'
 alias gf='find . ! -ipath "*.git*"'
 
