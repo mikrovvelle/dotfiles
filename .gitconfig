@@ -18,6 +18,9 @@
 	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
+  # pretty git log
+  # http://garmoncheg.blogspot.de/2012/06/pretty-git-log.html
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 
 [apply]
 	# Detect whitespace errors when applying a patch
