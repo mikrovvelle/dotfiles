@@ -19,8 +19,9 @@
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
   # pretty git log
-  # http://garmoncheg.blogspot.de/2012/06/pretty-git-log.html
-  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  # http://www.reddit.com/r/programming/comments/v9sto/pretty_git_log_console/
+  # lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  lg = log --decorate --graph --oneline
 
 [apply]
 	# Detect whitespace errors when applying a patch
